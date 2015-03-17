@@ -4,7 +4,7 @@
   "description": "Based project to test applications to end end with nightwatch, phantomjs and selenium web driver",
   "main": "index.js",
   "scripts": {
-    "test": "grunt nightwatch"
+    "test": "nightwatch"
   },
   "repository": {
     "type": "git",
