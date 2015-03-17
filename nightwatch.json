@@ -17,12 +17,12 @@
         "browserName": "phantomjs",
         "phantomjs.binary.path": "./node_modules/phantomjs/bin/phantomjs"
       }
-    }
-  },
+    },
 
-  "chrome": {
-    "desiredCapabilities": { 
-      "browserName": "chrome"
+    "chrome": {
+      "desiredCapabilities": { 
+        "browserName": "chrome"
+      }
     }
   }
 }
