@@ -1,0 +1,28 @@
+{
+  "src_folders" : "./tests/",
+  "output_folder" : "./reports/",
+  
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "./node_modules/selenium-standalone/.selenium/2.39.0/server.jar",
+    "cli_args" : {
+      "webdriver.chrome.driver" : "./node_modules/selenium-standalone/.selenium/2.39.0/chromedriver"
+    }  
+  },
+  
+  "test_settings" : {
+    "default" : {
+      "silent":true,
+      "desiredCapabilities": {
+        "browserName": "phantomjs",
+        "phantomjs.binary.path": "./node_modules/phantomjs/bin/phantomjs"
+      }
+    }
+  },
+
+  "chrome": {
+    "desiredCapabilities": { 
+      "browserName": "chrome"
+    }
+  }
+}
