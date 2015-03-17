@@ -1,0 +1,26 @@
+{
+  "name": "test-e2e",
+  "version": "1.0.0",
+  "description": "Based project to test applications to end end with nightwatch, phantomjs and selenium web driver",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt nightwatch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seperez/test-e2e.git"
+  },
+  "keywords": [
+    "e2e",
+    "test",
+    "nightwatch",
+    "phantomjs",
+    "selenium"
+  ],
+  "author": "Sebastian M. Perez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seperez/test-e2e/issues"
+  },
+  "homepage": "https://github.com/seperez/test-e2e"
+}
