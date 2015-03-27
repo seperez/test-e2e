@@ -14,7 +14,7 @@ var MeliSearch = function(browser) {
 
     this.resultsShouldContain = function(text) {
         browser
-            .waitForElementVisible('.breadcrumb h1', 2000)
+            .waitForElementVisible('.breadcrumb h1', 4000)
             .assert.containsText('.breadcrumb h1', text);
         return this;
     };
