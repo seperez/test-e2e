@@ -3,7 +3,7 @@
   "output_folder" : "./reports/",
   "globals_path": "./data/globals.js",
   "page_objects_path": "./pages/",
-  
+
   "selenium" : {
     "start_process" : true,
     "server_path" : "./node_modules/selenium-standalone/.selenium/2.39.0/server.jar",
@@ -15,19 +15,43 @@
   "test_settings" : {
     "default" : {
       "silent":true,
-      "desiredCapabilities": {
-        "browserName": "phantomjs",
-        "phantomjs.binary.path": "./node_modules/phantomjs/bin/phantomjs"
-      }
-    },
-
-    "chrome": {
       "screenshots" : {
         "enabled" : true,
         "path" : "./screenshots/"
       },
-      "desiredCapabilities": { 
+      "desiredCapabilities": {
+        "browserName": "chrome",
+      }
+    },
+
+    "phantom" : {
+      "desiredCapabilities" : {
+        "browserName" : "phantomjs",
+        "phantomjs.binary.path": "./node_modules/phantomjs/bin/phantomjs"
+      }
+    },
+    
+    "saucelabs" : {
+      "selenium_host" : "ondemand.saucelabs.com",
+      "selenium_port" : 80,
+      "username" : "${SAUCE_USERNAME}",
+      "access_key" : "${SAUCE_ACCESS_KEY}",
+      "use_ssl" : false,
+      "silent" : true,
+      "output" : true,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+        "name" : "test-example",
         "browserName": "chrome"
+      },
+      "globals" : {
+        "myGlobal" : "some_sauce_global"
+      },
+      "selenium" : {
+        "start_process" : false
       }
     }
   }
