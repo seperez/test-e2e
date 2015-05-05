@@ -1,4 +1,5 @@
 module.exports = {
+    'retryAssertionTimeout':10000,
     'host': '',
     'urls': {
         'desktop':{
