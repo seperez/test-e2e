@@ -1,6 +1,7 @@
 {
   "src_folders" : "./tests/",
   "output_folder" : "./reports/",
+  "globals_path": "./data/globals.js",
   
   "selenium" : {
     "start_process" : true,
